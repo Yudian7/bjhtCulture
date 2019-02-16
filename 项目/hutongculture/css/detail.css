@@ -1,0 +1,518 @@
+
+.nav{
+    width: 1185px;
+    height:30px;
+    position: absolute;
+    top:0px;
+    left:375px;
+}
+.nav .a,.b{
+    color:#828282;
+    text-decoration: none;
+    line-height: 30px;
+    padding:10px;
+    font-size: 16px;
+}
+.nav .d{
+    color:#828282;
+    text-decoration: none;
+    line-height: 30px;
+    padding:10px;
+    font-size: 16px;
+}
+.nav .a{
+    position:absolute;
+    left:38px;
+    top:-11px;
+
+}
+.nav .b{
+    position:absolute;
+    left:124px;
+    top:-11px;
+}
+    .nav .c {
+        color: #af332b;
+        font-size: 16px;
+        text-decoration: none;
+    }
+/* body */
+.body{
+    width: 1200px;
+    height:845px;
+    position: absolute;
+    top:0px;
+    left:400px;
+}
+/* 太湖源明细 */
+.tour-box{
+    width:1200px;
+    height:2200px;
+    display: flex;
+    background:#fafafa;
+}
+.left{
+    display:flex;
+}
+.body .left .name{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    font-size:22px;
+    color:#666666;
+    margin-bottom:40px;
+}
+.tour-box .left img {
+    top:80px;
+    width: 600px;
+    height: 370px;
+    position: absolute;
+    left: 0;
+}
+.tour-box .right {
+    width: 540px;
+    height: 730px;
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    margin-left: 30px;
+    color: #666666;
+    font-size: 14px;
+}
+.right div img{
+    width:25px;
+    height:25px;
+}
+.right div{
+    box-sizing: border-box;
+    height:20px;
+    margin-top:25px;
+    font-size:14px;
+}
+.price{
+    display: flex;
+    align-items: flex-end;
+}
+.price span{
+    display:block;
+    color:#ed6c00;
+    font-size:40px;
+    padding-top:-20px;
+}
+.right .price .que{
+    width: 15px;
+    height:19px;
+    color:#fff;
+    background:#ed6c00;
+    border-radius: 50%;
+    text-align: center;
+}
+.right .price .share{
+    color:#ed6c00;
+    border:1px solid #ed6c00; 
+    position: absolute;
+    right:0;
+    top:0;
+    width: 118px;
+    height:25px;
+    font-size:15px;
+}
+.right .price .share img{
+    width:20px;
+    height:21px;
+    position: absolute;
+    top:2px;
+    left:5px;
+}
+.right .price .share span{
+    line-height:25px;
+    font-size:15px;
+    padding:0;
+    padding-left:2px;
+    position: absolute;
+    top:0;
+    right:4px;
+}
+.right .trip span {
+    color: #af332b;
+    font-weight: 700;
+    margin-right: 3px;
+}
+.right > a {
+    margin-top: 20px;
+    display: block;
+    width: 60px;
+    height: 24px;
+    border: 1px solid #af332b;
+    color: #af332b;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+}
+.right .store{
+    display: flex;
+    position: absolute;
+    top:250px;
+}
+    .right .store div:first-child {
+        margin-top: 20px;
+        display: block;
+        width: 100px;
+        height: 30px;
+        border: 1px solid #af332b;
+        color: #fff;
+        background: #af332b;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 4px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 20px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,.32);
+    }
+.store span{
+    font-style: normal;
+    color: #ed6c00;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 5px;
+    position: absolute;
+    top:20px;
+    right:-110px;
+}
+.right .ts{
+    position: absolute;
+    top:300px;
+}
+.right .ts .first{
+    position: absolute;
+    top:83px;
+    height:35px;
+    width:500px;
+}
+.right .ts .second{
+    position: absolute;
+    top:130px;
+    height:35px;
+    width:500px;
+}
+.ts div:first-child {
+    color: #af332b;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 3px solid #af332b;
+    width: 80px;
+    height: 25px;
+}
+/*介绍*/
+.js {
+    width: 1200px;
+    height: 1000px;
+    position: absolute;
+
+    left: 0;
+    background: #fafafa;
+    top: 570px;
+}
+.js .nav-bar{
+    width: 1200px;
+    height:70px;
+    
+    position: relative;
+}
+.js .nav-bar .nav{
+    width:1200px ;
+    height:75px;
+    line-height: 70px;
+    font-size:16px;
+    color:#666666;
+    display: flex;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+    .js .nav-bar .nav a {
+        height: 70px;
+        color: #af332b;
+        display: block;
+    }
+    .js .nav-bar .nav a:nth-child(5) {
+        display: inline-block;
+        line-height: 62px;
+        color: #af332b;
+        position: absolute;
+        left: 200px;
+        background: #fff;
+    }
+    .js .nav-bar .nav a:nth-child(3) {
+        display: inline-block;
+        line-height: 62px;
+        color: #af332b;
+        position: absolute;
+        left: 90px;
+        background: #fff;
+    }
+    .js .nav-bar .nav .active {
+        border-bottom: 2px solid #af332b;
+        display: inline-block;
+        line-height: 62px;
+        color: #af332b;
+        position: absolute;
+        left: -15px;
+        background: #fff;
+        padding: 0;
+    }
+.js .nav-bar .nav span:nth-child(2){
+    position:absolute;
+    left:84px;
+    line-height: 64px;
+}
+.js .nav-bar .nav span:nth-child(4){
+    position:absolute;
+    left:192px;
+    line-height: 64px;
+}
+.js .map{
+    position: absolute;
+    top:100px;
+}
+.js .map img{
+    width:900px;
+    height:600px;
+    top:60px;
+    margin: 0 150px;
+}
+    .js .title {
+        width: 96px;
+        height: 30px;
+        background: #af332b;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        box-shadow: 2px 1px 10px rgba(0,0,0,.32)
+    }
+.js .detail{
+    position: absolute;
+    top:800px;
+
+}
+    .js .detail .trip-day-box-d1 .food img {
+        width: 283px;
+        height: 227px;
+        margin-bottom:20px;
+    }
+.js .detail .trip-day-box-d1 {
+    margin-top: 44px;
+    width: 1170px;
+    height: 292px;
+}
+    .js .detail .trip-day-box-d1 .left {
+        width: 101px;
+        height: 292px;
+        border-right: 1px solid #af332b;
+    }
+.js .detail .trip-day-box-d1 span{
+    font-size: 22px;
+    color: #ec6c00;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    left: 20px;
+}
+    .js .detail .trip-day-box-d1 .left .dot1 {
+        position: absolute;
+        top: 75px;
+        left: 91px;
+        width: 14px;
+        height: 14px;
+        border: 3px solid #fafafa;
+        border-radius: 50%;
+        background: #af332b;
+        z-index: 2;
+    }
+
+    .js .detail .trip-day-box-d1 .left .dot2 {
+        position: absolute;
+        top: 74px;
+        left: 90px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #af332b;
+        z-index: 1;
+    }
+    .js .detail .trip-day-box-d2 .right .food img {
+        width: 230px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+    .js .detail .trip-day-box-d2 .left {
+        width: 101px;
+        height: 182px;
+        border-right: 1px solid #af332b;
+    }
+.js .detail .trip-day-box-d2 span{
+    font-size: 22px;
+    color: #ec6c00;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    left: 20px;
+}
+    .js .detail .trip-day-box-d2 .left .dot1 {
+        position: absolute;
+        top: 368px;
+        left: 91px;
+        width: 14px;
+        height: 14px;
+        border: 3px solid #fafafa;
+        border-radius: 50%;
+        background: #af332b;
+        z-index: 2;
+        ;
+    }
+    .js .detail .trip-day-box-d2 .left .dot2 {
+        position: absolute;
+        top: 367px;
+        left: 90px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #af332b;
+        z-index: 1;
+    }
+
+.js .detail .trip-day-box-d1 .right{
+    width:812px;
+    height:292px;
+    position: absolute;
+    left:120px;
+    top:50px;
+}
+    .js .detail .trip-day-box-d1 .right .name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #af332b;
+    }
+.js .detail .trip-day-box-d1 .right .food em{
+    width: 23px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 10px;
+    background:url("../image/detail/food.png")no-repeat;
+    background-size: 22px auto;
+}
+.js .detail .trip-day-box-d1 .right .sleep em{
+    width: 23px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 10px;
+    background:url("../image/detail/hotel.png")no-repeat;
+    background-size: 22px auto;
+}
+.js .detail .trip-day-box-d1 .right .scene em{
+    width: 23px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 10px;
+    background:url("../image/detail/secnic.png")no-repeat;
+    background-size: 22px auto;
+}
+.js .detail .trip-day-box-d2 .right .scene em{
+    width: 23px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 10px;
+    background:url("../image/detail/secnic.png")no-repeat;
+    background-size: 22px auto;
+}
+.js .detail .trip-day-box-d2 .right .food em{
+    width: 23px;
+    height: 22px;
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 10px;
+    background:url("../image/detail/food.png")no-repeat;
+    background-size: 22px auto;
+    align-items: center;
+}
+.js .detail .trip-day-box-d2 .right{
+    width:812px;
+    height:182px;
+    position: absolute;
+    top:350px;
+    left:120px;
+}
+    .js .detail .trip-day-box-d2 .right .name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #af332b;
+    }
+.js .detail .tour .food{
+    height:30px;
+    margin-top:10px;
+}
+.js .detail .tour .sleep{
+    height:30px;
+    margin-top:10px;
+}
+.js .detail .tour .scene{
+    height:30px;
+    margin-top:10px;
+}
+.js .detail .tour .trip-day-box-d1 .detail{
+    position:absolute;
+    top:50px;
+    left:360px;
+  
+}
+    .js .detail .tour .trip-day-box-d2 .detail {
+        position: absolute;
+        top: 50px;
+        left: 360px;
+    }
+.js .detail .spend1{
+    width: 1200px;
+    height:192px;
+    margin-top: 35px;
+    color: #666666;
+    line-height: 22px;
+    font-size: 14px;
+}
+.js .detail .spend1 .content{
+    margin-top: 30px;
+}
+.js .detail .spend2{
+    width: 1200px;
+    height:192px;
+    margin-top: 35px;
+    color: #666666;
+    line-height: 22px;
+    font-size: 14px;
+}
+.js .detail .spend2 .content{
+    margin-top: 30px;
+}
+.js .detail .know{
+    width: 1200px;
+    height:192px;
+    margin-top: 20px;
+    color: #666666;
+    line-height: 22px;
+    font-size: 14px;
+}
+.js .detail .know .content{
+    margin-top: 30px;
+}
+
+.footer img{
+    position: absolute;
+    top:3160px;
+}

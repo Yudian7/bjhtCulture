@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>著名胡同</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/touchTouch.css">
+		 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+     <link rel="stylesheet" href="css/style.css">
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+		 <link rel="stylesheet" href="css/chinaz.css">
+		 <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/inner.css" type="text/css" media="screen">
+<!--数字滚动-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+		 <script src="js/jquery-1.11.0.min.js"></script>
+		 <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/script.js"></script> 
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.tooltipster.js"></script>
+     <script src="js/touchTouch.jquery.js"></script>
+     <script>
+       $(document).ready(function(){
+        $('.gallery a.gal').touchTouch();
+        $().UItoTop({ easingType: 'easeOutQuart' });
+        $('.tooltip').tooltipster();
+        });
+     </script>
+<style type="text/css">
+.demo{ padding: 2em 0;}
+.counter{
+	padding: 20px 0;
+	text-align: center;
+	position: relative;
+}
+.counter .counter-content{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background: #fff;
+	padding: 30px 0;
+	margin: 0 auto 30px;
+	z-index: 1;
+	position: relative;
+	transition: all 0.3s ease 0s;
+}
+.counter .counter-content:before{
+	content: "";
+	width: 122%;
+	height: 122%;
+	border-radius: 50%;
+	border: 20px solid #f19f48;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.counter .counter-content:after{
+	content: "";
+	border-top: 16px solid #f19f48;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	position: absolute;
+	bottom: -14px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.counter .counter-icon{
+	display: block;
+	font-size: 50px;
+	color: #f19f48;
+	line-height: 50px;
+}
+.counter .counter-value{
+	font-size: 50px;
+	font-weight: 700;
+	color: rgba(0,0,0,0.7);
+	line-height: 70px;
+}
+.counter .title{
+	display: inline-block;
+	padding: 5px 25px;
+	background: #f19f48;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: capitalize;
+	margin: 0;
+}
+.counter.red .counter-content:before{
+	border-color: #ef5f61;
+	border-bottom-color: transparent;
+}
+.counter.red .counter-content:after{ border-top-color: #ef5f61; }
+.counter.red .counter-icon{ color: #ef5f61; }
+.counter.red .title{ background: #ef5f61; }
+.counter.blue .counter-content:before{
+	border-color: #4d9fcf;
+	border-bottom-color: transparent;
+}
+.counter.blue .counter-content:after{ border-top-color: #4d9fcf; }
+.counter.blue .counter-icon{ color: #4d9fcf; }
+.counter.blue .title{ background: #4d9fcf; }
+.counter.purple .counter-content:before{
+	border-color: #a98ceb;
+	border-bottom-color: transparent;
+}
+.counter.purple .counter-content:after{ border-top-color: #a98ceb; }
+.counter.purple .counter-icon{ color: #a98ceb; }
+.counter.purple .title{ background: #a98ceb; }
+</style>
+<style type="text/css">
+	.post-slide{
+		margin: 0 15px;
+	}
+	.post-slide .post-img{
+		overflow: hidden;
+	}
+	.post-slide .post-img img{
+		width: 100%;
+		height: auto;
+		transform: scale(1);
+		transition: all 1s ease-in-out 0s;
+	}
+	.post-slide:hover .post-img img{
+		transform: scale(1.08);
+	}
+	.post-slide .post-content{
+		background: #fff;
+		padding: 20px;
+	}
+	.post-slide .post-title{
+		font-size: 17px;
+		font-weight: 600;
+		margin-top: 0;
+		text-transform: capitalize;
+	}
+	.post-slide .post-title a{
+		display: inline-block;
+		color: #808080;
+		transition: all 0.3s ease 0s;
+	}
+	.post-slide .post-title a:hover{
+		color: #3d3030;
+		text-decoration: none;
+	}
+	.post-slide .post-description{
+		font-size: 15px;
+		color: #676767;
+		line-height: 24px;
+		margin-bottom: 14px;
+	}
+	.post-slide .post-bar{
+		padding: 0;
+		margin-bottom: 15px;
+		list-style: none;
+	}
+	.post-slide .post-bar li{
+		color: #676767;
+		padding: 2px 0;
+	}
+	.post-slide .post-bar li i{
+		margin-right: 5px;
+	}
+	.post-slide .post-bar li a{
+		display: inline-block;
+		font-size: 12px;
+		color: #808080;
+		transition: all 0.3s ease 0s;
+	}
+	.post-slide .post-bar li a:after{
+		content: ",";
+	}
+	.post-slide .post-bar li a:last-child:after{
+		content: "";
+	}
+	.post-slide .post-bar li a:hover{
+		color: #3d3030;
+		text-decoration: none;
+	}
+	.post-slide .read-more{
+		display: inline-block;
+		padding: 10px 15px;
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+		background: #e7989a;
+		border-bottom-right-radius: 10px;
+		text-transform: capitalize;
+		transition: all 0.30s linear;
+	}
+	.post-slide .read-more:hover{
+		background: #333;
+		text-decoration: none;
+	}
+</style>
+
+     <!--[if lt IE 9]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http//windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http//storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+    <![endif]-->
+     </head>
+     
+     <body class="" id="top">
+     
+<!--==============================header=================================--> 
+<header>  
+  <div class="container_12">
+    <div class="grid_12">
+        <h1>
+        <a href="index.html">
+          <img src="images/logo.png" alt="Your Happy Family">
+        </a>
+      </h1>
+        <div class="menu_block ">
+			<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+				<ul class="sf-menu">
+					<li><a href="index.html">首&nbsp;&nbsp;&nbsp;页</a></li>
+					<li class="current"><a href="index-2.html">特色胡同</a></li>
+					<li><a href="index-1.html">胡同美食</a></li>
+					<li><a href="index-3.html">胡同日游</a></li>
+				</ul>
+			</nav>
+           <div class="clear"></div>
+        </div>
+      </div>      
+   </div>
+</header>
+<!--==============================Content=================================-->
+<div id="wrapper">
+  <!--==============================content=================================-->
+ <div class="demo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-6">
+				<div class="counter">
+					<div class="counter-content">
+						<div style="font-family:隶书; font-size:40px;">最长</div>
+						<span class="counter-value">3000</span>
+					</div>
+					<h3 class="title">东交民巷</h3>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="counter red">
+					<div class="counter-content">
+						<div style="font-family:隶书; font-size:40px;">最短</div>
+						<span class="counter-value">25.2</span>
+					</div>
+					<h3 class="title">一尺大街</h3>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="counter blue">
+					<div class="counter-content">
+						<div style="font-family:隶书; font-size:40px;">最宽</div>
+						<span class="counter-value">32.18</span>
+					</div>
+					<h3 class="title">灵境胡同</h3>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="counter purple">
+					<div class="counter-content">
+						<div style="font-family:隶书; font-size:40px;">最窄</div>
+						<span class="counter-value">1</span>
+					</div>
+					<h3 class="title">小喇叭口胡同</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  
+</div>
+
+
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery.sliderTabs.js"></script>
+<!-- Pretty photo  -->
+<script type="text/javascript" src="js/jquery.prettyphoto.js"></script>
+
+<!-- totop  -->
+<script type="text/javascript" src="js/prettify.js"></script>
+<!-- Accordion  -->
+<script type="text/javascript" src="js/accordion.js"></script>
+
+<!-- Navigation  -->
+<script type="text/javascript" src="js/jquery.mobilemenu1.js"></script>
+<script type="text/javascript"></script>
+<!-- 数字滚动 -->
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.counter-value').each(function(){
+		$(this).prop('Counter',0).animate({
+			Counter: $(this).text()
+    },
+    {
+			duration: 3500,
+			easing: 'swing',
+			step: function (now){
+				$(this).text(Math.ceil(now));
+		  }
+		});
+	})
+});
+</script>
+
+<!--==============================图片轮播=================================-->
+<div class="demo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" style="padding: 1em 0;">
+				<div id="news-slider" class="owl-carousel">
+					<div class="post-slide">
+						<div class="post-img">
+							<a href="#"><img src="images/zs1.jpg" alt=""></a>
+						</div>
+						<div class="post-content">
+							<h3 class="post-title"><a href="#">东交民巷</a></h3>
+							<p class="post-description">
+								地点：位于天安门广场毛主席纪念堂东侧，是一
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;条东西方向的街道
+							</p>
+							<p class="post-description">
+								地铁：从前门地铁站向东北出发，183米右转进
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								入广场东侧路，直行136米，50米后通过
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								阶梯，27米后直行进入东郊民巷。
+							</p>
+							<p class="post-description">
+								公交：41路、60路，正义路南口下车；<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								20路、44路内（外）环、599路、622
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								路，台基厂路口西下车。
+							</p>
+							<p class="post-description">
+								推荐游玩时长：3h
+							</p>
+							
+							<a href="#" class="read-more">read more</a>
+						</div>
+					</div>
+
+					<div class="post-slide">
+						<div class="post-img">
+							<a href="#"><img src="images/zs4.jpg" alt=""></a>
+						</div>
+						<div class="post-content">
+							<h3 class="post-title"><a href="#">一尺大街</a></h3>
+							<p class="post-description">
+								地点：位于北京杨梅竹斜街西段，在琉璃厂东街
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								东口东南，桐梓胡同东口至樱桃胡同北
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								口，是一条街东西方向的街道。
+							</p>
+							<p class="post-description">
+								地铁：从和平门向正东出发，后转进入佘家胡同，直行328米，50米后右转进入延寿街，直行359米到达一尺大街。
+							</p>
+							<p class="post-description">
+								公交：14路、66路、70路，琉璃厂下车；120
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								路、20路、2路、59路，大栅栏下车。
+							</p>
+							<p class="post-description">
+								推荐游玩时长：0.5h
+							</p>
+							<a href="#" class="read-more">read more</a>
+						</div>
+					</div>
+
+					<div class="post-slide">
+						<div class="post-img">
+							<a href="#"><img src="images/zs3.jpg" alt=""></a>
+						</div>
+						<div class="post-content">
+							<h3 class="post-title"><a href="#">灵境胡同</a></h3>
+							<p class="post-description">
+								地点：位于西城区中部，东起府右街，西至著名
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								的商业街西单北大街，是一条街东西方向
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								的街道。
+							</p>
+							<p class="post-description">
+								地铁：灵境胡同站
+							</p>
+							<p class="post-description">
+								公交：68路，灵境胡同站
+							</p>
+							<p class="post-description">
+								推荐游玩时长：2h
+							</p>
+							<br/>
+							<br/>
+							<br/>
+							<a href="#" class="read-more">read more</a>
+						</div>
+					</div>
+
+					<div class="post-slide">
+						<div class="post-img">
+							<a href="#"><img src="images/zs2.jpg" alt=""></a>
+						</div>
+						<div class="post-content">
+							<h3 class="post-title" style="font-family:Arial"><a href="#">小喇叭口胡同</a></h3>
+							<p class="post-description">
+								地点：位于宣武区东南部，西起大喇叭胡同，南
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								至永安路，呈曲尺形。
+							</p>
+							<p class="post-description">
+								地铁：从珠市口地铁站向正南出发，直行274
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								米，50米后右转进入永安路，直行178
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								米，右转进入小喇叭胡同
+							</p>
+							<p class="post-description">
+								公交：59路，天桥路口西下车；35路，福长街北
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								口下车。
+							</p>
+							<p class="post-description">
+								推荐游玩时长：1h
+							</p>
+							<a href="#" class="read-more">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#news-slider").owlCarousel({
+			items:3,
+			itemsDesktop:[1199,2],
+			itemsDesktopSmall:[980,2],
+			itemsMobile:[600,1],
+			pagination:false,
+			navigationText:false,
+			autoPlay:true
+		});
+	});
+</script>
+<!--==============================footer=================================-->
+<footer>   
+    <div class="container_12">
+      
+      <div class="grid_12">
+         <div class="socials">
+      <section id="play">
+        <div id="index">
+          <img src="images/nav_1.png" alt="">
+        </div>
+        <!-- <a href="#" target="_blank"><span id="fackbook" class="tooltip" title="Link us to Index">首</span></a> -->
+        </section>
+        <section id="travle">
+          <div id="index">
+              <img src="images/nav_2.png" alt="">
+          </div>
+        <!-- <a href="#" target="_blank"><span id="twitter-default" class="tooltip" title="Follow us on Twitter">学</span></a> -->
+        </section>      
+        <section id="listen">
+          <div id="index">
+              <img src="images/nav_3.png" alt="">
+          </div>
+        <!-- <a href="#" target="_blank"><span id="google-default" class="tooltip" title="Follow us on Google Plus">听<span></span></span></a> -->
+        </section>        
+        <section id="learn">
+          <div id="index">
+              <img src="images/nav_4.png" alt="">
+          </div>
+        <!-- <a href="#" target="_blank"><span id="rss-default" class="tooltip" title="Follow us on Dribble">传</span></a> -->
+        </section>
+       <div class="footer_logo"></div> 
+        </div>
+        <div class="copy">
+        Copyright &copy; 2018-2019 北京印刷学院 新媒体学院 数字媒体技术1班
+        </div>
+         
+      </div>
+    </div>  
+</footer>
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+
